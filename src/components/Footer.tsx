@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { BookOpen, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const Footer = () => {
+  const youtubeChannelUrl = "https://www.youtube.com/@ChildrenStoryPro";
+  
   return (
     <footer className="bg-white dark:bg-gray-900 border-t">
       <div className="container mx-auto px-4 py-12">
@@ -26,7 +28,7 @@ const Footer = () => {
               <a href="https://instagram.com" className="text-muted-foreground hover:text-story-primary">
                 <Instagram size={20} />
               </a>
-              <a href="https://youtube.com" className="text-muted-foreground hover:text-story-primary">
+              <a href={youtubeChannelUrl} className="text-muted-foreground hover:text-story-primary">
                 <Youtube size={20} />
               </a>
             </div>
@@ -67,6 +69,18 @@ const Footer = () => {
               </button>
             </div>
           </div>
+        </div>
+        
+        {/* YouTube Subscription Banner */}
+        <div className="mt-8 pt-6 border-t flex justify-center">
+          <a 
+            href={youtubeChannelUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg"
+          >
+            <Youtube size={24} className="animate-pulse" /> Subscribe to Our YouTube
+          </a>
         </div>
         
         <div className="border-t pt-8 mt-8 text-center text-muted-foreground">
