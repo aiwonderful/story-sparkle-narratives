@@ -3,7 +3,6 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import CategoryScroller from '../components/CategoryScroller';
 import FeaturedStories from '../components/FeaturedStories';
 import RecentStories from '../components/RecentStories';
 import Testimonials from '../components/Testimonials';
@@ -15,7 +14,6 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <CategoryScroller />
         <FeaturedStories />
         <RecentStories />
         <Testimonials />
